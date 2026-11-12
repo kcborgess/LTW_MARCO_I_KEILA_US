@@ -42,7 +42,100 @@
 
 </body>
 </html>
-git add .
-git commit -m "Completado o HTML: imagens, audio, video e tabelas"
-git push
-git log --oneline
+<!-- Secção de Destaques em index.html -->
+<section>
+  <h2>Nossos Destaques</h2>
+
+  <!-- Destaque 1 (com ligação para outra página) -->
+  <figure>
+    <a href="servicos.html">
+      <img src="imagens/bolo_personalizado.jpg" alt="Ver os nossos bolos personalizados para festas e aniversários" width="300" height="200">
+    </a>
+    <figcaption>Bolos Artesanais e Personalizados</figcaption>
+  </figure>
+
+  <!-- Destaque 2 -->
+  <figure>
+    <img src="imagens/cesta_presente.jpg" alt="Cesta de pequeno-almoço romântica e personalizada com doces" width="300" height="200">
+    <figcaption>Cestas Afetivas e Buquês Doces</figcaption>
+  </figure>
+
+  <!-- Destaque 3 -->
+  <figure>
+    <img src="imagens/coffee_break.jpg" alt="Mesa de salgados e doces decorada para evento corporativo" width="300" height="200">
+    <figcaption>Serviços de Coffee Break Empresarial</figcaption>
+  </figure>
+</section>
+<section>
+  <h2>Conheça o Nosso Processo de Produção</h2>
+  <video controls width="560" height="315">
+    <source src="media/apresentacao_mimosas.mp4" type="video/mp4">
+    <source src="media/apresentacao_mimosas.webm" type="v
+    <source src="media/mensagem_mimosas.mp3" type="audio/mpeg">
+    <source src="media/mensagem_mimosas.ogg" type="audio/ogg">
+    O seu navegador não suporta a reprodução de áudio.
+  </audio>
+</section>
+<table>
+  <caption>Tabela de Preços e Serviços - Mimosas Cake</caption>
+  <thead>
+    <tr>
+      <th scope="col">Categoria</th>
+      <th scope="col">Serviço / Produto</th>
+      <th scope="col">Preço Estimado (CVE)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Categoria Confeitaria -->
+    <tr>
+      <th scope="rowgroup" rowspan="2">Confeitaria</th>
+      <td>Bolo Personalizado (Simples)</td>
+      <td>4.000 CVE</td>
+    </tr>
+    <tr>
+      <td>Doces Gourmet (Cento)</td>
+      <td>3.500 CVE</td>
+    </tr>
+    <!-- Categoria Eventos -->
+    <tr>
+      <th scope="rowgroup" rowspan="2">Eventos & Catering</th>
+      <td>Decoração de Espaço Completa</td>
+      <td>15.000 CVE</td>
+    </tr>
+    <tr>
+      <td>Pacote Coffee Break (por pessoa)</td>
+      <td>800 CVE</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Nota: Os valores podem variar conforme o nível de personalização e transporte.</td>
+    </tr>
+  </tfoot>
+</table>
+<table>
+  <caption>Horário de Funcionamento</caption>
+  <thead>
+    <tr>
+      <th scope="col">Dia da Semana</th>
+      <th scope="col">Período da Manhã</th>
+      <th scope="col">Período da Tarde</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Segunda a Sexta-feira</th>
+      <td>08:00 - 12:30</td>
+      <td>14:00 - 19:00</td>
+    </tr>
+    <tr>
+      <th scope="row">Sábado</th>
+      <td>08:30 - 13:00</td>
+      <td>14:30 - 18:00</td>
+    </tr>
+    <tr>
+      <th scope="row">Domingo</th>
+      <td colspan="2">Encerrado</td>
+    </tr>
+  </tbody>
+</table> 
