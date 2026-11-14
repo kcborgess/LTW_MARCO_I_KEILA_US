@@ -24,21 +24,21 @@ body {
 }
 
 /* Secção Hero / Cabeçalho Principal */
-header.hero {
+header {
   background: linear-gradient(135deg, rgba(155, 79, 123, 0.08), rgba(217, 119, 160, 0.04));
   padding: 80px 20px;
   text-align: center;
   border-bottom: 1px solid rgba(155, 79, 123, 0.1);
 }
 
-header.hero h1 {
+header h1 {
   color: var(--primary-color);
   font-size: 2.8rem;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
-header.hero p {
+header p {
   color: var(--text-light);
   font-size: 1.1rem;
   text-transform: uppercase;
