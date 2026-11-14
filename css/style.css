@@ -1,0 +1,89 @@
+
+:root {
+  --primary-color: #9b4f7b; /* Tom rosa/mauve principal do logotipo */
+  --secondary-color: #d977a0; /* Rosa secundário para destaques */
+  --bg-color: #fcfbf9; /* Fundo bege moderno e acolhedor */
+  --card-bg: #ffffff; /* Fundo branco para cartões/blocos */
+  --text-dark: #333333; /* Cor de texto principal */
+  --text-light: #666666; /* Cor de texto secundária */
+  --accent-gold: #c5a059; /* Toque dourado elegante para detalhes */
+  --font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  font-family: var(--font-family);
+  line-height: 1.6;
+}
+
+/* Secção Hero / Cabeçalho Principal */
+header.hero {
+  background: linear-gradient(135deg, rgba(155, 79, 123, 0.08), rgba(217, 119, 160, 0.04));
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(155, 79, 123, 0.1);
+}
+
+header.hero h1 {
+  color: var(--primary-color);
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+header.hero p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+/* Contentor Geral */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* Estilo de Cartões (Ex: Portfólio, Serviços) */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(155, 79, 123, 0.06);
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(155, 79, 123, 0.12);
+}
+
+/* Botões Personalizados */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(155, 79, 123, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
